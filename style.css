@@ -1,0 +1,321 @@
+html {
+    font-size: 16px;
+}
+
+
+
+body {
+    font-family: 'arial';
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.heading {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+h1{
+    position: relative;
+}
+
+h1::after {
+    content: "";
+    width: 1em;
+    height: 1em;
+    background-color: white;
+    position: absolute;
+    left: 12rem;
+    z-index: -1;
+    float: right;
+    width: 50vw;
+    animation: loop 1.5s alternate infinite;
+
+}
+
+span{
+    color: black;
+    
+}
+
+.nama{
+    display: flex;
+    gap: 3rem;
+
+}
+
+
+p {
+    word-spacing: 100px;
+    margin-top: -10px;
+}
+
+#mark {
+    background-color: white;
+    width: 2rem;
+    height: 2rem;
+}
+
+.anggota {
+    color: white;
+    text-decoration: none;
+
+}
+.anggota:hover{
+    border-bottom: 1px solid white ;
+}
+
+.clear {
+    clear: both;
+}
+
+.page-decoration{
+    display: flex;
+    justify-content: space-evenly;
+    
+
+
+}
+.decoration-1 {
+    background-color: white;
+    width: 40em;
+    height: 1em;
+    top: 40%;
+    right: -50%;
+    position: relative;
+    filter: opacity(10%);
+    border-radius: 10px;
+
+}
+
+.decoration-2 {
+    background-color: white;
+    width: 40em;
+    height: 1em;
+    top: 20%;
+    right: -40%;
+    position: relative;
+    filter: opacity(10%);
+    border-radius: 10px;
+
+}
+
+.decoration-3 {
+    background-color: white;
+    width: 40em;
+    height: 1em;
+    top: 10px;
+    right: -60%;
+    position: relative;
+    filter: opacity(10%);
+    border-radius: 10px;
+
+}
+
+.decoration-4 {
+    background-color: white;
+    width: 40em;
+    height: 1em;
+    top: -30%;
+    left: -60%;
+    position: relative;
+    filter: opacity(10%);
+    border-radius: 10px;
+
+}
+.decoration-5 {
+    background-color: white;
+    width: 40em;
+    height: 1em;
+    top: -45%;
+    left: -30%;
+    position: relative;
+    filter: opacity(10%);
+    border-radius: 10px;
+
+}
+.decoration-6 {
+    background-color: white;
+    width: 40em;
+    height: 1em;
+    top: -55%;
+   left: -60%;
+    position: relative;
+    filter: opacity(10%);
+    border-radius: 10px;
+
+}
+
+.kiri[class^=decoration][class^=decoration] {
+    animation: geserkanan 1s;
+
+}
+
+@keyframes geserkanan {
+    from {
+        width: 0;
+
+
+    }
+    to {
+        width: 40em;
+    }
+}
+
+.kanan[class^=decoration] {
+    animation: geserkanan 1s;
+
+}
+
+@keyframes  loop{
+    0% {
+        width: 1em;
+
+
+
+    }
+    40% {
+        width: 1em;
+    }
+    60% {
+        width: 50vw;
+    }
+    100% {
+        width: 50vw;
+    }
+}
+
+.text-decor{
+    position: absolute;
+    left: 30vw;
+    font-size: 1.5em;
+    padding: 0px;
+    margin: 0px;
+    left: 0;
+    bottom: 75%;
+    color: rgb(162, 162, 162,);
+    display: flex;
+    flex-direction: row;
+    animation: geserkanan 2s ; 
+    overflow: hidden;
+    width: 60vw;
+    white-space: nowrap;
+}
+
+.text-decor-2{
+    position: absolute;
+    right: 0;
+    top: 80vh;
+
+}
+
+@keyframes typing {
+    0% {
+        width: 0em;
+    }
+    100%{
+        width: 3vw;
+        
+    }
+
+ 
+}
+
+.mess{
+    position: absolute;
+    right: 150px;
+    top: 400px;
+    filter: opacity(100%);
+    animation: typing 1s forwards;
+  
+
+
+}
+
+.line{
+    position: absolute;
+    top: 50%;
+    right: 121px;
+    width: 0.2em;
+    height: 20vw;
+    background-color: white;
+    animation: geseratas 2s;
+
+
+  
+}
+
+.text-decor-1 {
+    position: relative;
+    left: 100%;
+    top: 20px;
+}
+
+.text-decor-3 {
+    position: relative;
+    left: 200%;
+    padding-top: -100px;
+}
+
+.text-decor-4 {
+    position: relative;
+    right: 100px;
+}
+
+.text-decor-6 {
+    position: relative;
+    right: -40px;
+}
+
+@keyframes geseratas {
+    from {
+        height: 0;
+
+
+    }
+    to {
+        height: em;
+    }
+}
+
+.line-1{
+    position: absolute;
+    top: 0%;
+    left: 119px;
+    width: 0.2em;
+    height: 11vw;
+    background-color: white;
+    animation: geserbawah 2s;
+
+
+  
+}
+
+.page {
+    margin-top: 20px;
+    word-spacing: 50px;
+ 
+}
+
+
+.anggota-1 {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    font-weight: 400;
+
+
+}
+
+.anggota-1:hover{
+    border: 3px solid white;
+}
